@@ -44,7 +44,7 @@
                <padding>
                   <Insets left="60.0" />
                </padding></Label>
-            <Label layoutX="10.0" layoutY="245.0" text="Contact:" GridPane.rowIndex="5">
+            <Label layoutX="10.0" layoutY="245.0" text="Counselor:" GridPane.rowIndex="5">
                <padding>
                   <Insets left="60.0" />
                </padding></Label>

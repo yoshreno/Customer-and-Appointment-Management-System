@@ -30,7 +30,7 @@
                   <TableColumn fx:id="Title" prefWidth="165.0" text="Title" />
                   <TableColumn fx:id="Description" prefWidth="170.0" text="Description" />
                   <TableColumn fx:id="Location" prefWidth="135.0" text="Location" />
-                  <TableColumn fx:id="Contact" prefWidth="140.0" text="Contact" />
+                  <TableColumn fx:id="Contact" prefWidth="140.0" text="Counselor" />
                   <TableColumn fx:id="Type" prefWidth="135.0" text="Type" />
                   <TableColumn fx:id="User" prefWidth="140.0" text="User" />
                </columns>

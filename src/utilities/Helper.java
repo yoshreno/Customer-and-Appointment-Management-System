@@ -85,6 +85,7 @@ public class Helper {
                 break;
             }
         }
+        /**
         if(!upcomingAppt) {
             Alert info = new Alert(Alert.AlertType.INFORMATION);
             info.setTitle("Appointment Alert");
@@ -92,5 +93,6 @@ public class Helper {
             info.setContentText("No upcoming appointments within 15 minutes.");
             info.showAndWait();
         }
+         **/
     }
 }
