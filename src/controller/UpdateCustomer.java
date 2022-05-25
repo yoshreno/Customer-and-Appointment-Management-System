@@ -100,7 +100,7 @@ public class UpdateCustomer implements Initializable {
                     postalCode,
                     phone,
                     LocalDateTime.now(),
-                    DBuser.currentUser.getUserName(),
+                    DBuser.currentUser.getName(),
                     divisionBox.getSelectionModel().getSelectedItem().getDivisionId()
                     );
 

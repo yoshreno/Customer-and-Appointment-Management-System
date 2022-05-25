@@ -82,9 +82,9 @@ public class AddCustomer implements Initializable {
                     postalCode,
                     phone,
                     LocalDateTime.now(),
-                    DBuser.currentUser.getUserName(),
+                    DBuser.currentUser.getName(),
                     LocalDateTime.now(),
-                    DBuser.currentUser.getUserName(),
+                    DBuser.currentUser.getName(),
                     divisionBox.getSelectionModel().getSelectedItem().getDivisionId()
                     );
 

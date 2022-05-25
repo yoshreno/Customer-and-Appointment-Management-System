@@ -3,10 +3,8 @@ package model;
 import java.time.LocalDateTime;
 
 /** This is the model class for Customer object.*/
-public class Customer {
+public class Customer extends Person {
 
-    private int customerId;
-    private String customerName;
     private String address;
     private String postalCode;
     private String phone;
@@ -19,9 +17,8 @@ public class Customer {
     private Country country;
 
     /** This is the constructor method that sets the attributes for Customer object.*/
-    public Customer (int customerId, String customerName, String address, String postalCode, String phone, LocalDateTime createDate, String createdBy, LocalDateTime lastUpdate, String updatedBy, int divisionId, Division division, Country country) {
-        this.customerId = customerId;
-        this.customerName = customerName;
+    public Customer (int id, String name, String address, String postalCode, String phone, LocalDateTime createDate, String createdBy, LocalDateTime lastUpdate, String updatedBy, int divisionId, Division division, Country country) {
+        super(id, name);
         this.address = address;
         this.postalCode = postalCode;
         this.phone = phone;
@@ -36,35 +33,6 @@ public class Customer {
 
     /** This method overrides the toString() method to return Customer object as string name instead of its memory address.
      * @return Concatenated string of ID and customer name */
-    @Override
-    public String toString() {
-        String idAndName = "ID: " + customerId + " - " + customerName;
-        return idAndName;
-    }
-
-    /** This method sets customer ID.
-     * @param id Customer ID to set */
-    public void setId (int id) {
-        customerId = id;
-    }
-
-    /** This method gets customer ID.
-     * @return Customer ID */
-    public int getId () {
-        return customerId;
-    }
-
-    /** This method sets customer name.
-     * @param name Customer name to set */
-    public void setName (String name) {
-        customerName = name;
-    }
-
-    /** This method gets customer name.
-     * @return Customer name */
-    public String getName () {
-        return customerName;
-    }
 
     /** This method gets customer address.
      * @return Customer address */

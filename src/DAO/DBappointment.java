@@ -57,7 +57,7 @@ public class DBappointment {
 
                 User userObj = null;
                 for (User u: DBuser.allUsers) {
-                    if (u.getUserId() == userId) {
+                    if (u.getId() == userId) {
                         userObj = u;
                         break;
                     }
@@ -300,7 +300,7 @@ public class DBappointment {
             ps.setString(9, Helper.convertToUtc(lastUpdate).toString());
             ps.setString(10, updatedBy);
             ps.setString(11, String.valueOf(customer.getId()));
-            ps.setString(12, String.valueOf(user.getUserId()));
+            ps.setString(12, String.valueOf(user.getId()));
             ps.setString(13, String.valueOf(contact.getId()));
 
             ps.execute();
@@ -367,7 +367,7 @@ public class DBappointment {
             ps.setString(9, Helper.convertToUtc(lastUpdate).toString());
             ps.setString(10, updatedBy);
             ps.setString(11, String.valueOf(customer.getId()));
-            ps.setString(12, String.valueOf(user.getUserId()));
+            ps.setString(12, String.valueOf(user.getId()));
             ps.setString(13, String.valueOf(contact.getId()));
             ps.setString(14, String.valueOf(id));
 

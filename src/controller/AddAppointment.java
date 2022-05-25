@@ -90,9 +90,9 @@ public class AddAppointment implements Initializable {
                         LocalDateTime.of(date, startTime),
                         LocalDateTime.of(date, endTime),
                         LocalDateTime.now(),
-                        user.getUserName(),
+                        user.getName(),
                         LocalDateTime.now(),
-                        user.getUserName(),
+                        user.getName(),
                         customer,
                         user,
                         contact

@@ -116,9 +116,9 @@ public class UpdateAppointment implements Initializable {
                         LocalDateTime.of(date, startTime),
                         LocalDateTime.of(date, endTime),
                         apptToUpdate.getCreateDate(),
-                        user.getUserName(),
+                        user.getName(),
                         LocalDateTime.now(),
-                        DBuser.currentUser.getUserName(),
+                        DBuser.currentUser.getName(),
                         customer,
                         user,
                         contact

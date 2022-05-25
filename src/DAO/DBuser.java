@@ -55,7 +55,7 @@ public class DBuser {
                 if (rs.getString("Password").equals(password)) {
 
                     for (User user: DBuser.allUsers) {
-                        if (user.getUserName().equals(userName)) {
+                        if (user.getName().equals(userName)) {
                             currentUser = user;
                             break;
                         }
