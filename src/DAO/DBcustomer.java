@@ -211,4 +211,15 @@ public class DBcustomer {
         }
         return customers.size();
     }
+
+    public static ObservableList<Customer> getCustomerByName(String name) {
+        ObservableList<Customer> customers = FXCollections.observableArrayList();
+
+        for(Customer c: allCustomers) {
+            if(c.getName().toLowerCase().contains(name))
+                customers.add(c);
+        }
+
+        return customers;
+    }
 }

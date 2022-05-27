@@ -35,13 +35,14 @@
                   <TableColumn fx:id="UpdatedBy" prefWidth="110.0" text="Updated By" />
                </columns>
             </TableView>
-            <HBox alignment="CENTER_LEFT" layoutX="68.0" layoutY="87.0" prefHeight="100.0" prefWidth="200.0" spacing="600.0" GridPane.columnIndex="1">
+            <HBox alignment="CENTER_LEFT" layoutX="68.0" layoutY="87.0" prefHeight="100.0" prefWidth="200.0" spacing="930.0" GridPane.columnIndex="1">
                <children>
-                  <Label prefHeight="20.0" prefWidth="108.0" text="CUSTOMERS">
+                  <Label prefHeight="27.0" prefWidth="135.0" text="CUSTOMERS">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
+                  <TextField fx:id="searchCustomer" onAction="#onSearchCustomer" prefHeight="25.0" prefWidth="158.0" promptText="Search by Customer Name" />
                </children>
             </HBox>
             <HBox alignment="BOTTOM_LEFT" layoutX="68.0" layoutY="389.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">

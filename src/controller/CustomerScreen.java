@@ -39,6 +39,7 @@ public class CustomerScreen implements Initializable {
     public TableColumn<Customer, String> Country;
     public Button updateButton;
     public Button deleteButton;
+    public TextField searchCustomer;
 
     /** This method initializes the Customer screen.*/
     @Override
@@ -148,5 +149,9 @@ public class CustomerScreen implements Initializable {
             alert.setContentText("Please select a customer to delete");
             alert.showAndWait();
         }
+    }
+
+    public void onSearchCustomer(ActionEvent actionEvent) {
+        CustomerTable.setItems(DBcustomer.getCustomerByName(searchCustomer.getText()));
     }
 }
