@@ -51,7 +51,7 @@ public class LogInScreen implements Initializable {
         boolean correctCredentials = DBuser.verifyCredentials(userNameField.getText(), passwordField.getText());
 
         if (correctCredentials) {
-            Logger.printLogInSuccess();
+            //Logger.printLogInSuccess();
 
             DBcountry.getAllCountries();
             DBdivision.getAllDivisions();
@@ -72,7 +72,7 @@ public class LogInScreen implements Initializable {
             }
         }
         else {
-            Logger.printLogInFail();
+            //Logger.printLogInFail();
 
             ButtonType okButton = new ButtonType(rb.getString("ButtonText"));
             Alert alert = new Alert(Alert.AlertType.ERROR, rb.getString("LogInErrorMessage"), okButton);
